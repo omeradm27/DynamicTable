@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const BACKEND_URL = process.env.BACKEND_URL || `http://localhost:5055/api/`
+export const BACKEND_URL = process.env.BACKEND_URL || `http://localhost:5000/api/`
 //export const BACKEND_URL = `http://localhost:5055/api/`
 
 const instance = axios.create({
@@ -13,6 +13,8 @@ const instance = axios.create({
 });
 
 const responseBody = (response) => response.data;
+console.log('responseBody',responseBody);
+
 const requests = {
   get: (url, body, headers) =>
     instance.get(url, body, headers).then(responseBody),
