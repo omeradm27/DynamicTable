@@ -344,7 +344,7 @@ const DynamicTable = () => {
               ))}
             </tr>
           </thead>
-          <tbody>
+          <tbody >
             {Array.from({ length: rowCount }, (_, rowIndex) => (
               <tr style={{ alignItems: 'center' }} key={rowIndex}>
                 <th
@@ -365,7 +365,7 @@ const DynamicTable = () => {
                     style={{
                       width: `${tableWidths[colIndex]}px`,
                       height: `${tableHeights[rowIndex]}px`,
-                      borderStyle: 'none',
+                      borderStyle: 'solid',
                       borderColor: 'black',
                       position: 'relative',
                       padding: '8px'
@@ -375,9 +375,9 @@ const DynamicTable = () => {
                     <div
                       style={{
 
-                        border: '1px solid black',
-                        borderRadius: '8px',
-                        boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.3s)',
+                        // border: '1px solid black',
+                        // borderRadius: '8px',
+                        // boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.3s)',
                         width: `${tableWidths[colIndex]}px`,
                         height: `${tableHeights[rowIndex]}px`,
                         display: 'flex',
@@ -386,13 +386,13 @@ const DynamicTable = () => {
                         justifyContent: 'center',
                       }}
                     >
-                      {Array.isArray(cellImages[rowIndex]) && cellImages[rowIndex].length > 0 && (
+                      {/* {Array.isArray(cellImages[rowIndex]) && cellImages[rowIndex].length > 0 && ( */}
                         <img
                           src={cellImages[rowIndex][colIndex]}
                           alt={`${rowIndex + 1}-${colIndex + 1}`}
                           style={{ width: '100%', height: '100%' }}
                         />
-                      )}
+                      {/* )} */}
 
 
                       <input
