@@ -53,6 +53,33 @@ card-table {
   width: 50%;
 }
 
+.column_row_info {
+
+  /* margin-top: 25px; */
+  border-radius: 8px;
+  padding: 10px;
+  /* margin-bottom: 10px; */
+  display: flex;
+
+  width: 90%;
+}
+
+.row_info {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding-right: 0.2 rem;
+}
+
+.column_info {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
 .right-top {
   margin-left: auto;
   margin-right: 0.2 rem;
@@ -167,7 +194,7 @@ card-table {
 
 .add-button {
   /* w-full rounded-md h-12 */
-  padding: 0.20rem ;
+  padding: 0.20rem;
   background: rgba(5, 105, 45, 0.818);
   color: #fff;
   font-weight: bold;
@@ -177,9 +204,10 @@ card-table {
   border-radius: 25%;
 
 }
+
 .delete-icon {
   /* w-full rounded-md h-12 */
-  padding: 0.20rem ;
+  padding: 0.20rem;
   background: rgba(255, 0, 0, 0.818);
   color: #fff;
   font-weight: bold;
@@ -189,8 +217,9 @@ card-table {
   border-radius: 25%;
 
 }
+
 .delete-button {
-  padding: 0.20rem ;
+  padding: 0.20rem;
   background: rgba(255, 0, 0, 0.818);
   color: #fff;
   font-weight: bold;
