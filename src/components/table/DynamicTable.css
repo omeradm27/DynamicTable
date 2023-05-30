@@ -229,7 +229,17 @@ card-table {
   border-radius: 25%;
 
 }
-
+.clear-icon{
+  float: right;
+  background-color: rgb(41, 82, 245);
+  color: white;
+  padding: 8px 16px;
+  margin-right: 0.1rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
 .delete-button:hover {
   background: #c00;
 }

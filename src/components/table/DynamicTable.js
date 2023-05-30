@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './DynamicTable.css';
-import { FiPlus, FiUpload, FiX } from 'react-icons/fi';
+import { FiPlus, FiTrash, FiUpload, FiX } from 'react-icons/fi';
 import DynamicTableServices from '../../services/DynamicTableServices';
 import { notifySuccess, notifyError } from '../../utils/toast';
 
@@ -205,9 +205,29 @@ const DynamicTable = () => {
 
   return (
     <div >
+
       <div
         className='top-container'>
         <div className='left-top'>
+          <button
+            className="clear-icon"
+            onClick={() => {
+              setColumnWidths([])
+              setRowHeights([])
+              setName("")
+              setRowCount("")
+              setColCount("")
+              setTableHeight("")
+              setTableWidth("")
+              setTableWidths([])
+              setTableHeights([])
+              setCellImages([])
+            }}
+          >Tabloyu Temizle{"\t"}
+            <span>
+              <FiTrash />
+            </span>
+          </button>
           <h5>Dikdörtgenin İsmini Giriniz:</h5>
           <label>
             İsim{"\t"}
